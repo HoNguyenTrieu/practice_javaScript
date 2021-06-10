@@ -1,9 +1,9 @@
-const textDisplay = document.querySelector(".text_display");
+const numberDisplay = document.querySelector(".text_display");
 const btn = document.querySelector(".generate");
 
-function randomNum() {
+function generateNumber() {
   const random = Math.floor(Math.random() * 1000 + 1);
-  textDisplay.innerHTML = random;
+  numberDisplay.innerHTML = random;
 }
 
-btn.addEventListener("click", randomNum);
+btn.addEventListener("click", generateNumber);
